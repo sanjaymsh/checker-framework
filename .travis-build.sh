@@ -36,9 +36,9 @@ ROOTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 SCRIPTDIR=$ROOTDIR/checker/bin-devel/
 
 # For debugging
-(cd "$CHECKERFRAMEWORK" && ./gradlew getPlumeScripts -q)
-"${SCRIPTDIR}/plume-scripts/ci-info" typetools
-eval $("${SCRIPTDIR}/plume-scripts/ci-info" typetools)
+#(cd "$CHECKERFRAMEWORK" && ./gradlew getPlumeScripts -q)
+#"${SCRIPTDIR}/plume-scripts/ci-info" typetools
+#eval $("${SCRIPTDIR}/plume-scripts/ci-info" typetools)
 
 source "$SCRIPTDIR/build.sh"
 
